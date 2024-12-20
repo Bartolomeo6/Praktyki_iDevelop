@@ -1,0 +1,10 @@
+<!-- facts-section.component.html -->
+<div id="facts-section">
+  <h1>Fakty o Maladze</h1>
+  <ul>
+    <li *ngFor="let fact of facts">
+      <p>{{ fact }}</p>
+    </li>
+  </ul>
+  <button class="scroll-button" (click)="scrollTo('other-section')">Przejdź dalej</button>
+</div>

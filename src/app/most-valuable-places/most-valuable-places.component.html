@@ -1,0 +1,11 @@
+<!-- most-valuable-places.component.html -->
+<div id="most-valuable-places">
+  <h1>Najcenniejsze miejsca w Maladze</h1>
+  <ul>
+    <li *ngFor="let place of places">
+      <h2>{{ place.name }}</h2>
+      <p>{{ place.description }}</p>
+    </li>
+  </ul>
+  <button class="scroll-button" (click)="scrollTo('facts-section')">Przejdź dalej</button>
+</div>
